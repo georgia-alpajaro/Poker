@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pokerDice.css">
+    <title>
+        Poker Dice Game
+    </title>
+</head>
+
+<body>
+    <script src="pokerDice.js"></script>
+    <div class="container">
+        <h1>Poker Dice</h1>
+        <p class="output">Press start game when you're ready!</p>
+        <div class="hand">
+            <p class="Player1">Player 1</p>
+            <button id="clickDice0" class="dice" disabled="true" onclick="stickDice(0, 0)">
+                <img id="dice00" class="img00" src="images/dice6.png">
+            </button>
+            <button id="clickDice1" class="dice" disabled="true" onclick="stickDice(1, 0)">
+                <img id="dice01" class="img01" src="images/dice6.png">
+            </button>
+            <button id="clickDice2" class="dice" disabled="true" onclick="stickDice(2, 0)">
+                <img id="dice02" class="img02" src="images/dice6.png">
+            </button>
+            <button id="clickDice3" class="dice" disabled="true" onclick="stickDice(3, 0)">
+                <img id="dice03" class="img03" src="images/dice6.png">
+            </button>
+            <button id="clickDice4" class="dice" disabled="true" onclick="stickDice(4, 0)">
+                <img id="dice04" class="img04" src="images/dice6.png">
+            </button>
+        </div>
+        
+
+        <div class="hand">
+            <p class="Player2">Computer</p>
+            <div class="dice">
+                <img id="dice10" class="img10" src="images/dice6.png">
+            </div>
+            <div class="dice">
+                <img id="dice11" class="img11" src="images/dice6.png">
+            </div>
+            <div class="dice">
+                <img id="dice12" class="img12" src="images/dice6.png">
+            </div>
+            <div class="dice">
+                <img id="dice13" class="img13" src="images/dice6.png">
+            </div>
+            <div class="dice">
+                <img id="dice14" class="img14" src="images/dice6.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container bottom">
+        <button id="startButton" type="button" class="butn" onclick="startGame()">
+            Start Game
+        </button>
+        <button id="rollButton" type="button" class="butn" onclick="rollTheDice()">
+            Roll the Dice
+        </button>
+    </div>
+    <div class="container bottom">
+        <button id="nameButton" type="button" class="butn" onclick="editName()">
+            Edit Name
+        </button>
+        <button type="button" class="butn" onclick="showInstructions()">
+            Instructions
+        </button>
+    </div>
+</body>
+
+<!--
+    Plan: make each dice a button, and if clicked (show somehow) then it isn't rolled -- don't allow this until
+    after dice have been rolled once.
+    Make toggleable, since they should be able to select and unselect
+    For this I'll need a counter of how many times dice have been rolled, so incorporate that too.
+    Add in needed struct (handValues) and function (checkForBestHand) so computer algorithm can be added
+    The computer should evaluate which dice it should roll each time u roll
+    After all rolls, check hands and output result
+-->
+
+</html>

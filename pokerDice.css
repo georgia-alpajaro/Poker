@@ -1,0 +1,58 @@
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.hand {
+    width: 100%;
+}
+.dice {
+    text-align: center;
+    display: inline-block;
+    width: 18%;
+    background: none;
+    border: none;
+}
+.output {
+    text-align: center;
+}
+body {
+    background-color: #1f2b32;
+    margin: 0;
+}
+h1 {
+    margin: 30px;
+    font-family: "Lato";
+    text-shadow: 5px 0 #232931;
+    font-size: 4.5rem;
+    color: #9bada7;
+    text-align: center;
+}
+p {
+    font-size: 2rem;
+    color: #9bada7;
+    font-family: "Lato";
+}
+img {
+    width: 50%;
+}
+.bottom {
+    padding-top: 30px;
+}
+.butn {
+    background: #9bada7;
+    font-family: "Lato";
+    border-radius: 7px;
+    color: #ffff;
+    font-size: 30px;
+    padding: 16px 25px 16px 25px;
+    text-decoration: none;
+}
+.butn:hover {
+    background: #232931;
+    text-decoration: none;
+}
+#rollButton {
+    display: none;
+    align-self: center;
+}
